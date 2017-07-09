@@ -66,7 +66,7 @@ body {
   background: url("../images/noise-000000.png") repeat;
   cursor: pointer;
 
-  transition: all .2s ease;
+  transition: all .8s ease;
 }
 .nav-side-menu ul :not(collapsed) .arrow:before,
 .nav-side-menu li :not(collapsed) .arrow:before {
@@ -85,6 +85,9 @@ margin-right: 2px;
 	border-left: 5px solid #00664c;
   background-color: #151515;
   background: url("../images/noise-151515.png") repeat;
+
+  transition: border-left .8s ease;
+
 
 }
 .nav-side-menu ul .sub-menu li.active,
@@ -121,7 +124,8 @@ margin-right: 2px;
   border-left: 5px solid #000;
   padding-left: 0px;
   border-bottom: 1px solid #23282e;
-  transition: border-left .2s ease;
+
+  transition: border-left .8s ease;
 
 }
 .nav-side-menu li a {
