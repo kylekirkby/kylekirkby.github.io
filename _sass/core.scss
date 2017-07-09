@@ -26,7 +26,7 @@
 }
 
 body {
-    background-color: #FFF;
+    background-color: #000;
 	background: url("../images/noise.png") repeat;
     color: #000;
 	font-family: TitilliumWeb ;
@@ -46,13 +46,12 @@ body {
   width:145px;
   height: 100%;
   color: #fff;
-}
-.nav-side-menu .brand {
-  background-color: #23282e;
-  line-height: 50px;
-  display: block;
-  text-align: center;
-  font-size: 14px;
+
+
+  -webkit-box-shadow: 17px 5px 25px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 17px 5px 25px -13px rgba(0,0,0,0.75);
+box-shadow: 17px 5px 25px -13px rgba(0,0,0,0.75);
+
 }
 .nav-side-menu .toggle-btn {
   display: none;
@@ -189,10 +188,10 @@ margin-right: 2px;
       z-index: 10 !important;
       padding: 3px;
       background-color: #000000;
-      color: #656565;
+      color: #005c45;
       width: 40px;
       text-align: center;
-      border: 1px solid #abaaaa;
+      border: 1px solid #757575;
   }
   .brand {
     text-align: left !important;
@@ -208,7 +207,6 @@ margin-right: 2px;
 }
   #main {
 	margin-left: 155px;
-  	float: right;
   }
 
 }
@@ -254,13 +252,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a{
-	color: #099471 !important;
-	text-decoration: none !important;
+	color: #099471 ;
+	text-decoration: none ;
 	transition: color .2s linear;
 }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hover{
-	color: #099471 !important;
-	text-decoration: underline !important;
+	color: #099471 ;
+	text-decoration: underline ;
 	transition: color .2s linear;
 
 }
@@ -272,4 +270,47 @@ p code {
     background-color: #ffffff;
     border-radius: 3px;
     border: 1px solid #ccc;
+}
+
+p {
+	font-size: 20px;
+}
+
+.blog-content{
+	margin-top:100px;
+}
+.blog-side-info{
+	padding:20px;
+}
+
+
+
+//blog
+.blog-info{
+	position: relative;
+	margin-top: -76px;
+	background-color: #000;
+	color: #fff;
+	width: 100%;
+	opacity: .8;
+	padding: 5px;
+	height: auto;
+}
+
+.blog-title h1{
+	font-size: 16px;
+}
+
+.row.blog-post {
+    margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+    -webkit-box-shadow: 0px 0px 58px -7px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 58px -7px rgba(0,0,0,1);
+    box-shadow: 0px 0px 58px -7px rgba(0,0,0,1);
+}
+
+.blog-title h1 {
+    color: #fff;
 }

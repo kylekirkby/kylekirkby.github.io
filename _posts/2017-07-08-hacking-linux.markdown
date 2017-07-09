@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Hacking Linux!"
 date: 2017-07-09 12:00:59+00:00
 comments: true
 featured_image: hackers1996.jpg

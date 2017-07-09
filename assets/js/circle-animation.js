@@ -2,7 +2,7 @@ function rotateAnnotationCropper(offsetSelector, xCoordinate, yCoordinate, cropp
     //alert(offsetSelector.left);
 	var x = xCoordinate - offsetSelector.offset().left - offsetSelector.width()/2;
 	var y = -1*(yCoordinate - offsetSelector.offset().top - offsetSelector.height()/2);
-	var theta = Math.atan2(y,x)*(180/Math.PI);        
+	var theta = Math.atan2(y,x)*(180/Math.PI);
 
 
 	var cssDegs = convertThetaToCssDegs(theta);
@@ -13,20 +13,27 @@ function rotateAnnotationCropper(offsetSelector, xCoordinate, yCoordinate, cropp
   	});
 
 }
-    
+
 function convertThetaToCssDegs(theta){
     var cssDegs = 90 - theta;
     return cssDegs;
 }
 
 
-$(document).ready(function(){      
+$(document).ready(function(){
 
 	$("#planetClickable ul li.active").mouseenter(function(){
 	    $(this).addClass('animated jello');
 	});
 	$("#planetClickable ul li.active").mouseleave(function(){
 	    $(this).removeClass('animated jello');
+	});
+
+	$(".blog-post").mouseenter(function(){
+		$(this).addClass('animated jello');
+	});
+	$(".blog-post").mouseleave(function(){
+		$(this).removeClass('animated jello');
 	});
 
 	$("div#ship").one("webkitTransitionEnd  transitionend",
@@ -36,18 +43,18 @@ $(document).ready(function(){
 
   //  $('#ship').on('mousedown', function(){
        // $('body').on('mousemove', function(event){
-            //rotateAnnotationCropper($('#planet').parent(), event.pageX,event.pageY, $('#planet'));    
-        //});     
+            //rotateAnnotationCropper($('#planet').parent(), event.pageX,event.pageY, $('#planet'));
+        //});
     //});
 
-}); 
- 
+});
+
 
 
 $(document).ready(function(){
 
 	$( window ).resize(function() {
-	 	
+
 	 	var ship = document.getElementById("shipWrapper");	 	//Change the origin of the ships animation
 	 	var canvas = document.getElementById('floating-head-canvas');	 	//Change the height of the canvas on resize
 
