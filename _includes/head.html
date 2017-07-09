@@ -1,14 +1,8 @@
 <head>
-    <link rel="stylesheet" href="/assets/css/circle-animation.css"/>
-    <link rel="stylesheet" href="/assets/css/animate.css"/>
+    {% include css.html %}
     <title>Kyle Kirkby &bull; Innovative Web Developer</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon.png">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     {% seo title=false %}
-    <style type="text/css">
-     {% capture include_to_scssify %}
-       {% include inline.scss %}
-     {% endcapture %}
-     {{ include_to_scssify | scssify }}
-      </style>
 </head>
