@@ -1,46 +1,43 @@
+---
 title: Kyle Kirkby - Programming and other cool things...
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: kylekirkby@googlemail.com
 author: Kyle Kirkby
-description: > # this means to ignore newlines until "baseurl:"
-  Kyle Kirkby - This is my personal blog where I post about programming /
-  web development / hacking / making and other miscellaneous subjects.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: 'Kyle Kirkby - This is my personal blog where I post about programming
+  / web development / hacking / making and other miscellaneous subjects.
+
+'
+baseurl: ''
+url: https://kylekirkby.co.uk
 twitter_username: kylekirkbyy
 twitter:
-    username: kylekirkbyy
-logo: /assets/images/logo.png
-github_username:  kylekirkby
-
+  username: kylekirkbyy
+logo: "/assets/images/logo.png"
+github_username: kylekirkby
 social:
   name: Kyle Kirkby
   links:
-    - https://twitter.com/kylekirkbyy
-    - https://www.facebook.com/kylekirkby
-    - https://github.com/kylekirkby
-
+  - https://twitter.com/kylekirkbyy
+  - https://www.facebook.com/kylekirkby
+  - https://github.com/kylekirkby
 google_site_verification: XfbwDiCZLi6PNGiAeTSzdcWgs0J3o5GoOBpkRUsTXvE
-
-
-# Permalink for the blog posts of the Jekyll website.
-permalink: /blog/:title/
-
-url: https://kylekirkby.co.uk
-# Build settings
+permalink: "/blog/:title/"
 markdown: kramdown
 gems:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-paginate
 exclude:
-  - Gemfile
-  - Gemfile.lock
-
-paginate_path: /blog/:num/
+- Gemfile
+- Gemfile.lock
+paginate_path: "/blog/:num/"
 paginate: 5
-
 sass:
-    sass_dir: _sass
-sass:
-    style: compressed
+  style: compressed

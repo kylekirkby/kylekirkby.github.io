@@ -1,10 +1,11 @@
 ---
-layout: post
 title: My Jekyll Journey
-date: 2017-08-24 12:00:59+00:00
+date: 2017-08-24 12:00:59 Z
+layout: post
 comments: true
 featured_image: jekyllrb.png
 ---
+
 # Jekyll!
 
 I first encountered Jekyll Static sites when starting my first `actual` job at [Linaro](https://www.linaro.org). Jekyll is an amazing static site builder and does exactly what I and Linaro need it to do;  that is generate fast, high performance static websites that are not bloated with code that is not needed to perform a simple serving of static content to website users.
