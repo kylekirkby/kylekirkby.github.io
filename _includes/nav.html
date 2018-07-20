@@ -5,26 +5,42 @@
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
     <div class="menu-list">
         <ul id="menu-content" class="menu-content collapse out">
+          <a href="/blog/">
             <li class="collapsed {% if page.url == '/blog/' %}active{% endif %}">
-                <a href="/blog/"><i class="fa fa-home fa-lg "></i> Blog </a>
+                <i class="fa fa-home fa-lg "></i> Blog
             </li>
-            <li data-toggle="collapse" data-target="#subjects" class="collapsed">
-                <a href="#"><i class="fa fa-clone fa-lg "></i> Categories <span class="arrow"></span></a>
-            </li>
+          </a>
+            <a href="#">
+              {% capture collapsed %}collapsed{% endcapture %}
+              {% for cat in site.category %}
+                {% if page.url == cat.url %}
+                  {% capture collapsed %}none{% endcapture %}
+                {% endif %}
+              {% endfor%}
+              <li data-toggle="collapse" data-target="#subjects" class="{{ collapsed }}">
+                  <i class="fa fa-clone fa-lg "></i> Categories <span class="arrow"></span>
+              </li>
+            </a>
             <ul class="sub-menu collapse" id="subjects">
               {% for cat in site.category %}
-                <li><a href="{{cat.url}}">{{cat.title}}</a></li>
+                <a href="{{cat.url}}"><li class="{% if page.url == cat.url %}active{% endif %}">{{cat.title}}</li></a>
               {% endfor %}
             </ul>
-            <li  class="collapsed">
-                <a href="/about/"><i class="fa fa-user fa-lg "></i> About </a>
-            </li>
-            <li  class="collapsed">
-                <a href="https://github.com/kylekirkby"><i class="fa fa-github fa-lg "></i> Github </a>
-            </li>
-            <li  class="collapsed">
-                <a href="http://hackaday.io/thegod"><i class="fa fa-user fa-lg "></i> Hackaday.io </a>
-            </li>
+            <a href="/about/">
+              <li class="collapsed">
+                  <i class="fa fa-user fa-lg "></i> About
+              </li>
+            </a>
+            <a href="https://github.com/kylekirkby">
+              <li  class="collapsed">
+                  <i class="fa fa-github fa-lg "></i> Github
+              </li>
+            </a>
+            <a href="http://hackaday.io/thegod">
+              <li class="collapsed">
+                <i class="fa fa-user fa-lg "></i> Hackaday.io
+              </li>
+            </a>
         </ul>
     </div>
 </div>
