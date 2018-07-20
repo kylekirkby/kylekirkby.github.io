@@ -29,12 +29,6 @@ $(document).ready(function(){
 	    $(this).removeClass('animated jello');
 	});
 
-	$(".blog-post").mouseenter(function(){
-		$(this).addClass('animated jello');
-	});
-	$(".blog-post").mouseleave(function(){
-		$(this).removeClass('animated jello');
-	});
 
 	$("div#ship").one("webkitTransitionEnd  transitionend",
               function(event) {

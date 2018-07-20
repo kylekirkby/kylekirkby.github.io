@@ -6,3 +6,10 @@ $('a').each(function() {
        }
    }
 });
+
+$(".blog-post").mouseenter(function(){
+  $(this).addClass('animated jello');
+});
+$(".blog-post").mouseleave(function(){
+  $(this).removeClass('animated jello');
+});
