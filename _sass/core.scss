@@ -208,7 +208,12 @@ margin-right: 2px;
   #main {
 	margin-left: 155px;
   }
-
+  ul iframe{
+      opacity: .5;
+  }
+  ul iframe:hover {
+      opacity: 1;
+  }
 }
 
 .side-panel-logo{
