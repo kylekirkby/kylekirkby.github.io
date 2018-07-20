@@ -1,43 +1,69 @@
 ---
 title: Kyle Kirkby - Programming and other cool things...
 timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 email: kylekirkby@googlemail.com
 author: Kyle Kirkby
 description: 'Kyle Kirkby - This is my personal blog where I post about programming
   / web development / hacking / making and other miscellaneous subjects.
-
 '
 baseurl: ''
-url: https://kylekirkby.co.uk
+
+url: https://kylekirkby.github.io
+
 twitter_username: kylekirkbyy
+
 twitter:
   username: kylekirkbyy
+
 logo: "/assets/images/logo.png"
+
 github_username: kylekirkby
+
 social:
   name: Kyle Kirkby
   links:
   - https://twitter.com/kylekirkbyy
   - https://www.facebook.com/kylekirkby
   - https://github.com/kylekirkby
+
 google_site_verification: XfbwDiCZLi6PNGiAeTSzdcWgs0J3o5GoOBpkRUsTXvE
-permalink: "/blog/:title/"
+
 markdown: kramdown
+
 gems:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-paginate
+
 exclude:
 - Gemfile
 - Gemfile.lock
+
 paginate_path: "/blog/:num/"
+
+permalink: "/blog/:categories/:title/"
+
 paginate: 5
 sass:
   style: compressed
+
+collections:
+  posts:
+    title: Posts
+    output: true
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+  -
+    scope:
+      type: "category"
+    values:
+      layout: "category"
+      permalink: /blog/:title/

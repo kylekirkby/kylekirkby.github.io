@@ -1,0 +1,30 @@
+<div class="nav-side-menu">
+    <a href="/blog/">
+        <img src="/assets/images/logo.png" class="img-responsive side-panel-logo"/>
+    </a>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+            <li class="collapsed {% if page.url == '/blog/' %}active{% endif %}">
+                <a href="/blog/"><i class="fa fa-home fa-lg "></i> Blog </a>
+            </li>
+            <li data-toggle="collapse" data-target="#subjects" class="collapsed">
+                <a href="#"><i class="fa fa-clone fa-lg "></i> Categories <span class="arrow"></span></a>
+            </li>
+            <ul class="sub-menu collapse" id="subjects">
+              {% for cat in site.category %}
+                <li><a href="{{cat.url}}">{{cat.title}}</a></li>
+              {% endfor %}
+            </ul>
+            <li  class="collapsed">
+                <a href="/about/"><i class="fa fa-user fa-lg "></i> About </a>
+            </li>
+            <li  class="collapsed">
+                <a href="https://github.com/kylekirkby"><i class="fa fa-github fa-lg "></i> Github </a>
+            </li>
+            <li  class="collapsed">
+                <a href="http://hackaday.io/thegod"><i class="fa fa-user fa-lg "></i> Hackaday.io </a>
+            </li>
+        </ul>
+    </div>
+</div>

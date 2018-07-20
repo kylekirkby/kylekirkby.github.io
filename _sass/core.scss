@@ -248,7 +248,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #005b44;
+    color: #4f4f4f;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a{
@@ -275,17 +275,13 @@ p code {
 p {
 	font-size: 20px;
 }
-
-.blog-content{
-	margin-top:100px;
-}
+//blog
 .blog-side-info{
 	padding:20px;
 }
-
-
-
-//blog
+.blog-post-info {
+  margin-bottom:10px;
+}
 .blog-info{
 	position: relative;
 	margin-top: -76px;

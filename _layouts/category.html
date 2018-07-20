@@ -2,8 +2,9 @@
 title: Kyle Kirkby - Blog
 layout: default
 ---
+<h1>{{page.title}}</h1>
 <div class="row blog-row">
-    {% for post in paginator.posts %}
+    {% for post in site.categories[page.category] %}
         <div class="col-sm-4">
             <a href="{{post.url}}">
                 <div class="row blog-post">
