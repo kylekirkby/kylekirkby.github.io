@@ -162,6 +162,9 @@ margin-right: 2px;
 
 @media (max-width: 767px) {
 
+  iframe.trello-board.trello-board-rendered.trello-board-compact {
+    display: none;
+}
 	.nav-side-menu ul .sub-menu li,
 	.nav-side-menu li .sub-menu li {
 
@@ -322,4 +325,10 @@ p {
 ul iframe {
     margin-top: 10px;
     margin-left: 5px;
+}
+iframe.trello-board.trello-board-rendered.trello-board-compact {
+    transform: scale(.5);
+    left: -57px;
+    margin-top: -40px;
+    position: absolute;
 }
