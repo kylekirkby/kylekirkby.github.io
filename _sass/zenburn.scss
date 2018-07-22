@@ -1,0 +1,146 @@
+#main  code.highlight, #main pre.highlight {
+color:#fdce93;
+background-color:#3f3f3f;
+}
+#main p code {
+  padding: 4px 4px;
+  padding-top: 7px;
+  font-size: 18px;
+  color: #a73c3c;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+#main .highlight .hll {
+background-color:#222;
+}
+
+#main .highlight .err {
+color:#e37170;
+background-color:#3d3535;
+}
+
+#main .highlight .k {
+color:#f0dfaf;
+}
+
+#main .highlight .p {
+color:#41706f;
+}
+
+#main .highlight .cs {
+color:#cd0000;
+font-weight:700;
+}
+
+#main .highlight .gd {
+color:#cd0000;
+}
+
+#main .highlight .ge {
+color:#ccc;
+font-style:italic;
+}
+
+#main .highlight .gr {
+color:red;
+}
+
+#main .highlight .go {
+color:gray;
+}
+
+#main .highlight .gs {
+color:#ccc;
+font-weight:700;
+}
+
+#main .highlight .gu {
+color:purple;
+font-weight:700;
+}
+
+#main .highlight .gt {
+color:#0040D0;
+}
+
+#main .highlight .kc {
+color:#dca3a3;
+}
+
+#main .highlight .kd {
+color:#ffff86;
+}
+
+#main .highlight .kn {
+color:#dfaf8f;
+font-weight:700;
+}
+
+#main .highlight .kp {
+color:#cdcf99;
+}
+
+#main .highlight .kr {
+color:#cdcd00;
+}
+
+#main .highlight .ni {
+color:#c28182;
+}
+
+#main .highlight .ne {
+color:#c3bf9f;
+font-weight:700;
+}
+
+#main .highlight .nn {
+color:#8fbede;
+}
+
+#main .highlight .vi {
+color:#ffffc7;
+}
+
+#main .highlight .c,.preview-zenburn #main .highlight .g,.preview-zenburn #main .highlight .cm,.preview-zenburn #main .highlight .cp,.preview-zenburn #main .highlight .c1 {
+color:#7f9f7f;
+padding: 3px;
+}
+
+#main .highlight .l,.preview-zenburn #main .highlight .x,.preview-zenburn #main .highlight .no,.preview-zenburn #main .highlight .nd,.preview-zenburn #main .highlight .nl,.preview-zenburn #main .highlight .nx,.preview-zenburn #main .highlight .py,.preview-zenburn #main .highlight .w {
+color:#ccc;
+}
+
+#main .highlight .n,.preview-zenburn #main .highlight .nv,.preview-zenburn #main .highlight .vg {
+color:#dcdccc;
+}
+
+#main .highlight .o,.preview-zenburn #main .highlight .ow {
+color:#f0efd0;
+}
+
+#main .highlight .gh,.preview-zenburn #main .highlight .gp {
+color:#dcdccc;
+font-weight:700;
+}
+
+#main .highlight .gi,.preview-zenburn #main .highlight .kt {
+color:#00cd00;
+}
+
+#main .highlight .ld,.preview-zenburn #main .highlight .s,.preview-zenburn #main .highlight .sb,.preview-zenburn #main .highlight .sc,.preview-zenburn #main .highlight .sd,.preview-zenburn #main .highlight .s2,.preview-zenburn #main .highlight .se,.preview-zenburn #main .highlight .sh,.preview-zenburn #main .highlight .si,.preview-zenburn #main .highlight .sx,.preview-zenburn #main .highlight .sr,.preview-zenburn #main .highlight .s1,.preview-zenburn #main .highlight .ss {
+color:#cc9393;
+}
+
+#main .highlight .m,.preview-zenburn #main .highlight .mf,.preview-zenburn #main .highlight .mh,.preview-zenburn #main .highlight .mi,.preview-zenburn #main .highlight .mo,.preview-zenburn #main .highlight .il {
+color:#8cd0d3;
+}
+
+#main .highlight .na,.preview-zenburn #main .highlight .nt {
+color:#9ac39f;
+}
+
+#main .highlight .nb,.preview-zenburn #main .highlight .nc,.preview-zenburn #main .highlight .nf,.preview-zenburn #main .highlight .bp,.preview-zenburn #main .highlight .vc {
+color:#efef8f;
+}

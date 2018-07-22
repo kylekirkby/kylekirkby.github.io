@@ -16,7 +16,22 @@ layout: default
                         </div>
                         <div class="blog-date">
                             <span class="date">
-                                <small><em>{{post.date |  date: "%A, %B %-d, %Y"}}</em></small>
+                                <small><em>{{post.date |  date: "%A "}}{% assign d = post.date | date: "%-d" %}
+                                {% case d %}
+                                  {% when '1' or '21' or '31' %}{{ d }}st
+                                  {% when '2' or '22' %}{{ d }}nd
+                                  {% when '3' or '23' %}{{ d }}rd
+                                  {% else %}{{ d }}th
+                                  {% endcase %}
+  {{post.date |  date: "%B , %Y"}}</em></small>
+                            </span>
+                        </div>
+                        <div class="date-circle">
+                            <span class="day">
+                              {{post.date |  date: "%d /"}}
+                            </span>
+                            <span class="month">
+                              {{post.date |  date: "%m"}}
                             </span>
                         </div>
                     </div>

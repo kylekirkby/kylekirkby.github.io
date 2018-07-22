@@ -8,6 +8,8 @@ description: 'Kyle Kirkby - This is my personal blog where I post about programm
 '
 baseurl: ''
 
+highlighter: rouge
+
 url: https://kylekirkby.github.io
 
 twitter_username: kylekirkbyy

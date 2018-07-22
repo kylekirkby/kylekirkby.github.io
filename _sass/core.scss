@@ -270,7 +270,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hove
 	transition: color .2s linear;
 
 }
-
 p code {
     padding: 2px 4px;
     font-size: 90%;
@@ -279,7 +278,6 @@ p code {
     border-radius: 3px;
     border: 1px solid #ccc;
 }
-
 p {
 	font-size: 20px;
 }
@@ -288,17 +286,22 @@ p {
 	padding:20px;
 }
 .blog-post-info {
-  margin-bottom:10px;
+  margin-bottom:40px;
 }
-.blog-info{
-	position: relative;
-	margin-top: -76px;
-	background-color: #000;
-	color: #fff;
-	width: 100%;
-	opacity: .8;
-	padding: 5px;
-	height: auto;
+.blog-content {
+  margin-bottom:40px;
+}
+.blog-info {
+    position: relative;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    opacity: .8;
+    padding: 5px;
+    height: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .blog-title h1{
@@ -306,13 +309,14 @@ p {
 }
 
 .row.blog-post {
-    margin-bottom: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 30px;
-    -webkit-box-shadow: 0px 0px 58px -7px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 58px -7px rgba(0,0,0,1);
-    box-shadow: 0px 0px 58px -7px rgba(0,0,0,1);
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  min-height: 200px;
+  -webkit-box-shadow: 0px 0px 58px -7px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 58px -7px rgba(0,0,0,1);
+  box-shadow: 0px 0px 58px -7px rgba(0,0,0,1);
 }
 
 .blog-title h1 {
@@ -331,4 +335,49 @@ iframe.trello-board.trello-board-rendered.trello-board-compact {
     left: -57px;
     margin-top: -40px;
     position: absolute;
+}
+.blog-post-info em {
+    font-size: 20px;
+    color:#505050;
+    margin-right:5px;
+}
+
+.blog-post-info a {
+    color: #028160;
+    margin-left: 2px;
+}
+a.tag {
+    padding:  2px 5px;
+    background-color: #e1e1e1;
+    color: #6c6c6c;
+    border: 1px solid #d5d5d5;
+    transition: all 200ms ease;
+}
+a.tag:hover {
+    padding:  2px 5px;
+    background-color: #3f3f3f;
+    color: #f2f2f2;
+    text-decoration:none;
+}
+
+.tags {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.row.blog-row a:hover {
+    color: white;
+    text-decoration: none;
+}
+.date-circle {
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    background-color: #e4920f;
+    border-radius: 25px;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    padding-top: 14px;
+    font-family: SANS-SERIF;
+    font-weight: bold;
 }
