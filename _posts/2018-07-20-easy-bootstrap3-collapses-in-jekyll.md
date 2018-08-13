@@ -15,6 +15,7 @@ tags:
 image:
   name: bootstrap-collapses.png
   path: /assets/images/bootstrap-collapses.png
+author: Kyle Kirkby
 ---
 
 When you are creating a static jekyll website sometimes you may want to add a Bootstrap Collapse section for FAQ's or other generic content. This can get messy if you are doing it in HTML and not dynamically building them using a Jekyll data file. I will go through how to create an faq section using Bootstrap Collapse panels from a `faq.yml` Jekyll data file located in the \_data folder.
@@ -27,10 +28,9 @@ Include this snippet in the `<head>` of your Jekyll layout/include. See [this tu
 
 **CDN**
 
-```html
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-```
+
 
 **Local**
 ```html
@@ -124,4 +124,4 @@ Now you just need to add the following liquid to generate your Bootstrap3 Collap
 {{ "{%" }}  include collapses.html data-file=site.data.faq %}
 
 ```
-You should now see multiple Bootstrap collapses outputted on your page, generated from a simple YAML file and Jekyll include. 
+You should now see multiple Bootstrap collapses outputted on your page, generated from a simple YAML file and Jekyll include.

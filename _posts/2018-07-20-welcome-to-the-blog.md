@@ -3,6 +3,7 @@ layout: post
 title:  Welcome to the Blog
 date:   2018-07-20 12:00:00
 categories: general
+author: Kyle Kirkby
 ---
 Hello to whomever has stumbled across my blog. I have recently decided to start documenting interesting things I create and find as I make my way through this weird yet wonderfully awesome event in spacetime we call __life__.
 
