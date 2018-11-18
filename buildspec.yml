@@ -6,7 +6,7 @@ phases:
       - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist
   build:
     commands:
-      - echo "*************** Install required gems ***************"
+      - echo "*************** Install Required gems ***************"
       - bundle install
       - echo "*************** Building Jekyll Site ***************"
       - bundle exec jekyll build
