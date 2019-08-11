@@ -1,72 +1,29 @@
----
-title: Kyle Kirkby - Programming and other cool things...
-timezone: UTC
-email: kylekirkby@googlemail.com
-author: Kyle Kirkby
-description: 'Kyle Kirkby - This is my personal blog where I post about programming
-  / web development / hacking / making and other miscellaneous subjects.
-'
-baseurl: ''
-
-highlighter: rouge
-
-url: https://kylekirkby.github.io
-
-twitter_username: kylekirkbyy
-
-twitter:
-  username: kylekirkbyy
-
-logo: "/assets/images/logo.png"
-
-github_username: kylekirkby
-
-social:
-  name: Kyle Kirkby
-  links:
-  - https://twitter.com/kylekirkbyy
-  - https://www.facebook.com/kylekirkby
-  - https://github.com/kylekirkby
-
-google_site_verification: XfbwDiCZLi6PNGiAeTSzdcWgs0J3o5GoOBpkRUsTXvE
-
+title: Kyle Kirkby
+description: > # this means to ignore newlines until "baseurl:"
+  I'm a web developer / magician / learner / amateur astronomer
+permalink: ':title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kylekirkby.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
+# Author Settings
+author: Kyle Kirkby # add your name
+author-img: kyle-kirkby.jpg # add your photo
+about-author: I'm a web developer / magician / life learner xD / amateur astronomer # add description
+social-twitter: the_actual_kyle # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: kylekirkby # add your Github handle
+social-linkedin: kylekirkby # add your Linkedin handle
+social-email: kylekirkbyy@gmail.com # add your Email address
+# Disqus
+discus-identifier: https-kylekirkby-github-io # add your discus identifier
+# Tracker
+analytics: # Google Analytics
+# Build Settings
 markdown: kramdown
-
-gems:
-- jekyll-feed
-- jekyll-seo-tag
-- jekyll-paginate
-- amp-jekyll
-
-exclude:
-- Gemfile
-- Gemfile.lock
-
-paginate_path: "/blog/:num/"
-
-permalink: "/blog/:categories/:title/"
-
-paginate: 5
-sass:
-  style: compressed
-
-collections:
-  posts:
-    title: Posts
-    output: true
-  category:
-    output: true
-
-defaults:
-  -
-    scope:
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true
-  -
-    scope:
-      type: "category"
-    values:
-      layout: "category"
-      permalink: /blog/:title/
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+paginate: 8
+paginate_path: "/page/:num"
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

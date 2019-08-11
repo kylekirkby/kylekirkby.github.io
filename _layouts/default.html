@@ -1,24 +1,12 @@
----
----
 <!DOCTYPE html>
-<html>
+<html lang="en">
 {% include head.html %}
-    <body>
-        {% include nav.html %}
-        <div class="container-fluid" id="main">
-            <div class="row">
-                <div class="container">
-                  {{content}}
-                </div>
-            </div>
-            <div class="row comments-row">
-                <div class="container">
-                  {% if page.comments %}
-                    {% include comments.html %}
-                  {% endif %}
-                </div>
-            </div>
-        </div>
-        {% include js.html %}
-    </body>
+<body>
+
+  <div class="wrapper">
+    {{ content }}
+  </div>
+  
+  {% include analytics.html %}
+</body>
 </html>
