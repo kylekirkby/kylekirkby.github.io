@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Thoughts from a balcony or something like that..`,
+    title: `Thoughts from a balcony`,
     author: `Kyle Kirkby`,
     description: `A place where I write about things that interest me and hopefully others too.`,
     siteUrl: `https://kylekirkby.github.io`,
