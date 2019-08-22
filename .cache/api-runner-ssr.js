@@ -1,23 +1,23 @@
 var plugins = [{
-      plugin: require('/Users/paddlewalker/Documents/thoughtsfromabalcony.github.io/node_modules/gatsby-remark-images/gatsby-ssr'),
+      plugin: require('/Users/paddlewalker/Documents/kylekirkby.github.io/node_modules/gatsby-remark-images/gatsby-ssr'),
       options: {"plugins":[],"maxWidth":590},
     },{
-      plugin: require('/Users/paddlewalker/Documents/thoughtsfromabalcony.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/Users/paddlewalker/Documents/kylekirkby.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/paddlewalker/Documents/thoughtsfromabalcony.github.io/node_modules/gatsby-plugin-feed/gatsby-ssr'),
+      plugin: require('/Users/paddlewalker/Documents/kylekirkby.github.io/node_modules/gatsby-plugin-feed/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/paddlewalker/Documents/thoughtsfromabalcony.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/paddlewalker/Documents/kylekirkby.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Gatsby Starter Blog","short_name":"GatsbyJS","start_url":"/","background_color":"#ffffff","theme_color":"#663399","display":"minimal-ui","icon":"content/assets/gatsby-icon.png"},
     },{
-      plugin: require('/Users/paddlewalker/Documents/thoughtsfromabalcony.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/Users/paddlewalker/Documents/kylekirkby.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/paddlewalker/Documents/thoughtsfromabalcony.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/paddlewalker/Documents/kylekirkby.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/paddlewalker/Documents/thoughtsfromabalcony.github.io/node_modules/gatsby-plugin-typography/gatsby-ssr'),
+      plugin: require('/Users/paddlewalker/Documents/kylekirkby.github.io/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
